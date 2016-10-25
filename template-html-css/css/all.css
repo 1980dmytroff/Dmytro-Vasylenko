@@ -153,6 +153,8 @@ strong {}
 .slider-kalau .text-block {
 	float: left;
 	padding: 5% 0;
+	position: relative;
+	z-index: 2;
 }
 .slider-kalau .text {
 	padding: 10% 0;
