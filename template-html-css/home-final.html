@@ -3,8 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1;">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
 <link rel="stylesheet" href="css/all.css" type="text/css"/>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <title>TITLE</title>
 </head>
@@ -12,13 +14,16 @@
 	<div id="wrapper">
 		<div id="header">
 			<div class="layout">
-				<h1 class="logo"><a href="#"></a></h1>
-				<ul class="nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Testimonials</a></li>
-					<li><a href="#">Contact</a></li>
+				<h1 class="logo"><a href="#wrapper"></a></h1>
+				<div id="menu-toggle" class="open-menu fa_icon" onclick='openMenu()''>
+					<i class="fa fa-bars"></i>
+				</div>
+				<ul id="header_menu" class="nav">
+					<li><a href="#wrapper" class="active">Home</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -40,53 +45,206 @@
 				</div>
 			</div>
 
-			<div class="services-block">
+			<div id="services" class="services-block">
 				<div class="layout">
 					<div class="title-block">
 						<h3>Our Services</h3>
 						<p>our awesome services</p>
-						<img src="images/Separator1.png">
+						<img src="images/separator1.png">
 					</div>
 					<div class="item-container list-services">
-						<div class="item-lg-3 item-services">
+						<div class="item-md-3 item-sm-6 item-services">
 							<div class="img-block">
 								<img src="images/heart.png" class="img-resp">
 							</div>
-							<h4>Beautiful Design</h4>
+							<h5>Macankumbang</h5>
 							<p> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
 							<a href="#" class="button-more">More</a>
 						</div>
-						<div class="item-lg-3 item-services">
+						<div class="item-md-3 item-sm-6 item-services">
 							<div class="img-block">
 								<img src="images/globe.png" class="img-resp">
 							</div>
-							<h4>Global Trend</h4>
+							<h5>Global Trend</h5>
 							<p> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
 							<a href="#" class="button-more">More</a>
 						</div>
-						<div class="item-lg-3 item-services">
+						<div class="item-md-3 item-sm-6 item-services">
 							<div class="img-block">
 								<img src="images/monitor.png" class="img-resp">
 							</div>
-							<h4>Responsive</h4>
+							<h5>Responsive</h5>
 							<p> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
 							<a href="#" class="button-more">More</a>
 						</div>
-						<div class="item-lg-3 item-services">
+						<div class="item-md-3 item-sm-6 item-services">
 							<div class="img-block">
 								<img src="images/rocket.png" class="img-resp">
 							</div>
-							<h4>Awesome Design</h4>
+							<h5>Awesome Design</h5>
 							<p> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
 							<a href="#" class="button-more">More</a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="slogan">
+				<div class="slogan-block">
+					<h2 class="slogan-title">Our Greatest Works</h2>
+					<p class="slogan-text">come from awesome imagination</p>
+				</div>
+			</div>
+			<div id="work" class="portofolio-block">
+				<div class="layout">
+					<div class="title-block">
+						<h3>Portofolio</h3>
+						<p>our awesome services</p>
+						<img src="images/separator.png">
+					</div>
+					<ul class="nav-portofolio">
+						<li><a href="#" class="active">All</a></li>
+						<li>/</li>
+						<li><a href="#">Web</a></li>
+						<li>/</li>
+						<li><a href="#">Print</a></li>
+					</ul>
+					<div class="item-container list-portofolio">
+						<div class="item-md-4 item-sm-6">
+							<div class="item-portofolio">
+								<h4>Macankumbang</h4>
+								<p> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+								<a href="#"><img src="images/eye.png"></a>
+							</div>
+						</div>
+						<div class="item-md-4 item-sm-6">
+							<div class="item-portofolio">
+								<h4>Macankumbang</h4>
+								<p> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+								<a href="#"><img src="images/eye.png"></a>
+							</div>
+						</div>
+						<div class="item-md-4 item-sm-6">
+							<div class="item-portofolio">
+								<h4>Macankumbang</h4>
+								<p> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+								<a href="#"><img src="images/eye.png"></a>
+							</div>
+						</div>
+						<div class="item-md-4 item-sm-6">
+							<div class="item-portofolio">
+								<h4>Macankumbang</h4>
+								<p> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+								<a href="#"><img src="images/eye.png"></a>
+							</div>
+						</div>
+						<div class="item-md-4 item-sm-6">
+							<div class="item-portofolio">
+								<h4>Macankumbang</h4>
+								<p> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+								<a href="#"><img src="images/eye.png"></a>
+							</div>
+						</div>
+						<div class="item-md-4 item-sm-6">
+							<div class="item-portofolio">
+								<h4>Macankumbang</h4>
+								<p> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+								<a href="#"><img src="images/eye.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="browse-all">
+						<h5>Browse all<br>
+							300+
+						</h5>
+						<a href="#"><img src="images/shape.png"></a>
+					</div>
+				</div>
+			</div>
+			<div id="testimonials" class="reviews-block">
+				<div class="layout">
+					<div class="title-block">
+						<h3>What Our Happy Customer Say</h3>
+						<p>lorem Ipsum dolor sit amet</p>
+						<img src="images/separator.png">
+					</div>
+					<div class="item-container">
+						<div class="item-md-4 item-sm-4">
+							<div class="circle"></div>
+						</div>
+						<div class="item-md-8 item-sm-8">
+							<div class="text-reviews">
+								<i class="fa fa-quote-left" aria-hidden="true"></i>
+								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+								<p class="customer">Jone Doe</p>
+							</div>
+						</div>
+					</div>
+					<ul class="nav-carusel">
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#" class="active"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="slogan">
+				<div class="slogan-block">
+					<h2 class="slogan-title">Get in Touch With us</h2>
+					<p class="slogan-text">Ready for 24/7</p>
+				</div>
+			</div>
+			<div id="map">
+				<section style='position: relative; z-index: 98;' id="canvas1" class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5106.564404011021!2d-5.484706525290144!3d50.21194675004969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9ee36fa2dfcc600!2sKidz+R+Us!5e0!3m2!1sru!2sua!4v1477497149156" width="100%" height="510" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</section>
+			</div>
+			<div id="contact" class="contact-block">
+				<div class="layout">
+					<div class="title-block">
+						<h3>Contact</h3>
+						<p>Let's talk business, get in touch!</p>
+						<img src="images/separator1.png">
+					</div>
+					<div class="item-container contact-container">
+						<div class="item-md-6 item-sm-6 item-contact">
+							<p>Office Hours</p>
+							<p>Monday to Friday / 7:00 - 18:00 Saturday / 9:00 - 15:00</p>
+							<p><span class="fa fa-map-marker" aria-hidden="true"></span>25 Silver Cost Avenue, MD 20910 Indonesia</p>
+							<p><span class="fa fa-phone" aria-hidden="true"></span>(621) 555 6789</p>
+							<p><span class="fa fa-envelope" aria-hidden="true"></span><a href="mailto:hello@macankumbang.net" title="email">hello@macankumbang.net</a></p>
+							<ul class="nav-social">
+								<li><a href="#" class="fa fa-twitter active" aria-hidden="true"></a></li>
+								<li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
+								<li><a href="#" class="fa fa-google-plus" aria-hidden="true"></a></li>
+							</ul>
+						</div>
+						<div class="item-md-6 item-sm-6 item-contact">
+							<form id='feedback-form'>
+								<label class="feedback_label">
+									<input type='text' id='feedback_name' name='name' placeholder='Name' class='form-control' />
+								</label>
+								<label class="feedback_label">
+									<input type='email' id='feedback_email' name='email' placeholder='Email (will not published)' class='form-control' />
+								</label>
+								<div class='clear'></div>
+								<label class="feedback_label">
+									<textarea id='feedback_comment' name='text' maxlength="450" placeholder='Message' class='form-control' required></textarea>
+								</label>
+								<input type='hidden' name='subj' value="feedback" />
+								<a href="#" id='do_feedback' role='button' class='button-more'>Send</a>
+								<div class='clear'></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div id="footer">
-		footer
+			<p>(c) copyright 2013 macankumbang</p>
+			<h4>Macan<span>kumbang</span></h4>
 		</div>
 	</div>
+
+	<a href="#" id="up_button" class="toTop fa fa-chevron-up"></a>
 </body>
 </html>
