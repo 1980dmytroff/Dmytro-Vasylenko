@@ -1,12 +1,12 @@
 $(window).load(function() {
 
-  $("#up_button").on("click", function (e) {
-      e.stopPropagation();
-      e.preventDefault();
-      $('html, body').animate({
-          scrollTop:0
-      }, 450);
-  });
+	$("#up_button").on("click", function (e) {
+		e.stopPropagation();
+		e.preventDefault();
+		$('html, body').animate({
+	  		scrollTop:0
+		}, 450);
+	});
 
 	$("#header_menu a, #header .logo a").on("click", function (e) {
 		$('html, body').animate({
@@ -41,10 +41,10 @@ $(document).ready(function($) {
 });
 
 $(window).scroll(function() {
-  if ($(window).scrollTop()>360)
-    $("#up_button").fadeIn();
-  else 
-    $("#up_button").fadeOut();
+	if ($(window).scrollTop()>360)
+		$("#up_button").fadeIn();
+	else 
+		$("#up_button").fadeOut();
 });
 
 function openMenu() {
