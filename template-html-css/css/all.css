@@ -169,7 +169,7 @@ strong {}
 	line-height: 26px;
 }
 #header .nav li a:hover, #header .nav li a.active  {
-	color: #C0C0C0;
+	color: #ea5b58;
 }
 #main {
 	display: block;
@@ -181,6 +181,7 @@ strong {}
 	position: relative;
 	height: 485px;
 }
+/****************************************slider*/
 .slider-kalau {
 	background: #161828;
 	width: 100%;
@@ -235,7 +236,7 @@ strong {}
 	left: 24px;
 }
 
-
+/****************************************services*/
 .services-block {
 	background: #475a85;
 	width: 100%;
@@ -279,7 +280,7 @@ strong {}
 	font-size: 11px;
 	line-height: 33px;
 }
-
+/****************************************slogan*/
 .slogan {
 	text-align: center;
 	background-color: #7B7B7B;
@@ -294,7 +295,7 @@ strong {}
 .slogan h2 {
 	font-size: 28px;
 }
-
+/****************************************portofolio*/
 .nav-portofolio {
 	margin-bottom: 48px;
 	text-align: center;
@@ -491,7 +492,7 @@ textarea {
 }
 
 @media (min-width: 768px) {
-	.layout { width:750px; }
+	.layout { width:768px; }
 	.open-menu { display: none; }
 	#header .logo { float: left; }
 	#header .nav { display: block; float: right; }
@@ -519,7 +520,7 @@ textarea {
 }
 
 @media (min-width: 992px) {
-	.layout { width:970px; }
+	.layout { width:992px; }
 	#header .nav li { margin: 0 0 0 50px; }
 	.slider-kalau .text h2 { font-size: 28px; }
 	.slider-kalau .text p { font-size: 20px; }
@@ -539,7 +540,7 @@ textarea {
 }
 
 @media (min-width: 1200px) {
-	.layout { width:1170px; }
+	.layout { width:1200px; }
 	.slider-kalau .text h2 { font-size: 36px; }
 	.slider-kalau .text p { font-size: 24px; }
 }
