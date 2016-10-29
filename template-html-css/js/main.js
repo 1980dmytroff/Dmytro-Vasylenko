@@ -26,8 +26,6 @@ $(window).load(function() {
 		$(".nav-portofolio a").removeClass('active');
 		$(this).toggleClass('active');
 	});
-
-
 });
 
 $(document).ready(function($) {
