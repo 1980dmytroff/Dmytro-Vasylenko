@@ -260,6 +260,14 @@ strong {}
 .title-block p {
 	margin-bottom: 24px;
 }
+.title-block:after {  
+    content: " ";  
+    position: relative;  
+    background: url(../images/separator1.png) 0 0 no-repeat;  
+    display: inline-block;  
+    height: 13px;  
+    width: 281px;  
+}
 .services-block .container-flex {
 	display: flex;
 	flex-direction: column;
@@ -306,6 +314,9 @@ strong {}
 	font-size: 28px;
 }
 /****************************************portofolio*/
+#work .title-block:after {  
+    background: url(../images/separator.png) 0 0 no-repeat;  
+}
 .nav-portofolio {
 	margin-bottom: 48px;
 	text-align: center;
