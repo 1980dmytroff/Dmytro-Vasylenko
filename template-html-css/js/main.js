@@ -38,13 +38,13 @@ $(document).ready(function($) {
 	});
 
 	$('.tabs_menu a').click(function(e) {
-        e.stopPropagation();
-        e.preventDefault();
-        $('.tabs_menu .active').removeClass('active');
-        $(this).addClass('active');
-        $('.tab').hide();
-        $('#'+$(this).attr('href')).fadeIn(400);
-    });
+		e.stopPropagation();
+		e.preventDefault();
+		$('.tabs_menu .active').removeClass('active');
+		$(this).addClass('active');
+		$('.tab').hide();
+		$('#'+$(this).attr('href')).fadeIn(400);
+	});
 });
 
 $(window).scroll(function() {

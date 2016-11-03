@@ -4,9 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1;">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
 <link rel="stylesheet" href="css/all.css" type="text/css"/>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <title>TITLE</title>
 </head>
@@ -15,7 +17,7 @@
 		<div id="header">
 			<div class="layout">
 				<h1 class="logo"><a href="#main"></a></h1>
-				<div id="menu-toggle" class="open-menu fa_icon" onclick='openMenu()''>
+				<div id="menu-toggle" class="open-menu fa_icon" onclick='openMenu()'>
 					<i class="fa fa-bars"></i>
 				</div>
 				<ul id="header_menu" class="nav">
@@ -237,23 +239,31 @@
 						<h3>What Our Happy Customer Say</h3>
 						<p>lorem Ipsum dolor sit amet</p>
 					</div>
-					<div class="item-container">
-						<div class="item-md-4 item-sm-4">
-							<div class="circle"></div>
-						</div>
-						<div class="item-md-8 item-sm-8">
-							<div class="text-reviews">
-								<i class="fa fa-quote-left" aria-hidden="true"></i>
-								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
-								<p class="customer">Jone Doe</p>
+					<ul class="bxslider">
+						<li>
+							<div class="container-flex">
+								<div class="block-circle">
+									<div class="circle"></div>
+								</div>
+								<div class="text-reviews">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+									<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+									<p class="customer">Jone Doe</p>
+								</div>
 							</div>
-						</div>
-					</div>
-					<ul class="nav-carusel">
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#" class="active"></a></li>
+						</li>
+						<li>
+							<div class="container-flex">
+								<div class="block-circle">
+									<div class="circle"></div>
+								</div>
+								<div class="text-reviews">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+									<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+									<p class="customer">Jone Doe</p>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -317,3 +327,9 @@
 	<a href="#" id="up_button" class="toTop fa fa-chevron-up"></a>
 </body>
 </html>
+
+<script>
+	$(document).ready(function(){
+		$('.bxslider').bxSlider();
+	});
+</script>

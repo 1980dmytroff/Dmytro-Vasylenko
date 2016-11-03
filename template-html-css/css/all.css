@@ -381,9 +381,6 @@ strong {}
 .item-portofolio a:hover {
 	opacity: 0.4;
 }
-
-
-
 .browse-all {
 	margin-top: 30px;
 	margin-bottom: 15px;
@@ -403,6 +400,25 @@ strong {}
 #testimonials .title-block:after {  
     background: url(../images/separator.png) 0 0 no-repeat;  
 }
+
+#testimonials .container-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.block-circle {
+	width: 100%;
+}
+#testimonials .bx-viewport {
+	height: auto!important;
+	background-color: #EBEDEC;
+	border: none;
+	box-shadow: none;
+	left: 0;
+}
+.text-reviews {
+	width: 100%;
+}
 .circle {
 	background-color: #7B7B7B;
 	width: 210px;
@@ -411,42 +427,18 @@ strong {}
 	border-radius: 50%;
 	margin:  0 auto;
 }
-.text-reviews {
-	padding: 4% 30px;
-	position: relative;
-}
-.text-reviews .fa {
-	position: absolute;
-	left: 0;
-}
 .text-reviews p {
 	font-style: italic;
+	margin-left: 22px;
 }
 .text-reviews .customer {
 	font-size: 24px;
 	font-weight: bold;
 	margin-top: 20px;
 }
-.nav-carusel {
-	margin: 90px 0;
-	text-align: center;
-	display: block;
-}
-.nav-carusel li {
-	display: inline-block;
-}
-.nav-carusel li a {
-	width: 23px;
-	height: 23px;
-	background-color: #7B7B7B;
-	display: block;
-	border-radius: 50%;
-	margin: 3px;
-}
 
-.nav-carusel li a:hover, .nav-carusel li a.active {
-	background-color: #323232;
-}
+
+
 .scrolloff { pointer-events: none; }
 
 .contact-block {
@@ -567,13 +559,17 @@ textarea {
 	.slider-kalau .image-holder-bg { width: 73%; }
  
 	.services-block .container-flex, .portofolio-block .container-flex { flex-direction: row; justify-content: space-between; flex-wrap: wrap;}
-	.item-services, { width: 50%; padding: 0 15px; }
+	.item-services { width: 50%; padding: 0 15px; }
 
 	.item-portofolio { width: 48%; }
 
 	.slogan { height: 322px; padding: 0; }
 	.slogan h2 { font-size: 36px; }
 	.slogan p { font-size: 22px; }
+
+	#testimonials .container-flex { flex-direction: row; }
+	.block-circle { width: 30%; }
+	.text-reviews { width: 65%; }
 
 	.item-contact { text-align: left; }
 	.nav-social { margin: 50px 0 0 0; }
@@ -610,9 +606,6 @@ textarea {
 
 	.slogan h2 { font-size: 48px; }
 	.slogan p { font-size: 24px; }
-
-	.text-reviews { padding: 8.7% 30px; }
-	.circle { width: 280px; height: 280px; }
 
 	.item-md-3 { width: 25%; }
 	.item-md-4 { width: 33.33333333%; }
