@@ -317,6 +317,10 @@ strong {}
 #work .title-block:after {  
     background: url(../images/separator.png) 0 0 no-repeat;  
 }
+
+#tab2, #tab3 {
+    display: none;
+}
 .nav-portofolio {
 	margin-bottom: 48px;
 	text-align: center;
@@ -331,12 +335,41 @@ strong {}
 .nav-portofolio li a:hover, .nav-portofolio li a.active {
 	color: #333;
 }
+.portofolio-block .container-flex {
+	display: flex;
+	flex-direction: column;
+}
 .item-portofolio {
 	background-color: #475A85;
 	text-align: center;
 	color: #fff;
 	padding: 50px 36px 40px;
 	margin-bottom: 30px;
+	width: 100%;
+	position: relative;
+}
+.item-content {
+	position: relative;
+	z-index: 100;
+}
+.item-portofolio .item-mask {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #7B7B7B;
+	opacity: 1;
+	top: 0;
+	left: 0;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	z-index: 199;
+}
+.item-portofolio:hover .item-mask {
+	opacity: 0;
+	z-index: 99;
 }
 .item-portofolio h4 {
 	margin-bottom: 20px;
@@ -348,6 +381,8 @@ strong {}
 .item-portofolio a:hover {
 	opacity: 0.4;
 }
+
+
 
 .browse-all {
 	margin-top: 30px;
@@ -364,7 +399,10 @@ strong {}
 .browse-all a:hover {
 	opacity: 0.4;
 }
-
+/****************************************reviews-block*/
+#testimonials .title-block:after {  
+    background: url(../images/separator.png) 0 0 no-repeat;  
+}
 .circle {
 	background-color: #7B7B7B;
 	width: 210px;
@@ -528,8 +566,10 @@ textarea {
 	.slider-kalau .img-slider { width: 50%; margin-right: -23px; }
 	.slider-kalau .image-holder-bg { width: 73%; }
  
-	.services-block .container-flex { flex-direction: row; justify-content: space-between; flex-wrap: wrap;}
-	.item-services { width: 50%; padding: 0 15px; }
+	.services-block .container-flex, .portofolio-block .container-flex { flex-direction: row; justify-content: space-between; flex-wrap: wrap;}
+	.item-services, { width: 50%; padding: 0 15px; }
+
+	.item-portofolio { width: 48%; }
 
 	.slogan { height: 322px; padding: 0; }
 	.slogan h2 { font-size: 36px; }
@@ -565,6 +605,8 @@ textarea {
 
 	.title-block { margin-top: 72px; margin-bottom: 74px; }
 	.item-services { width: 25%; }
+
+	.item-portofolio { width: 31.5%; }
 
 	.slogan h2 { font-size: 48px; }
 	.slogan p { font-size: 24px; }
