@@ -404,7 +404,6 @@ strong {}
 #testimonials .container-flex {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 .block-circle {
 	width: 100%;
@@ -427,14 +426,30 @@ strong {}
 	border-radius: 50%;
 	margin:  0 auto;
 }
+.text-reviews i {
+	float: left;
+	margin-top: 2px;
+}
 .text-reviews p {
 	font-style: italic;
 	margin-left: 22px;
+	line-height: 1.7;
 }
 .text-reviews .customer {
 	font-size: 24px;
 	font-weight: bold;
 	margin-top: 20px;
+}
+.bx-wrapper {
+	margin-bottom: 180px;
+}
+.bx-wrapper .bx-pager {
+	bottom: -80px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
 }
 
 
@@ -448,15 +463,17 @@ strong {}
 .contact-block .title-block {
 	color: #fff;
 }
-.contact-container {
-	margin-bottom: 80px;
+#contact .container-flex {
+	display: flex;
+	flex-direction: column-reverse;
 }
 .item-contact {
 	color: #fff;
 	text-align: center;
+	width: 100%;
 }
 .item-contact p {
-	margin-bottom: 22px;
+	margin-bottom: 16px;
 }
 .item-contact p span {
 	margin-right: 15px;
@@ -467,16 +484,16 @@ strong {}
 .item-contact p:first-child {
 	font-weight: bold;
 }
-.item-contact p:nth-child(2) {
-	margin-bottom: 37px;
-}
-
 .nav-social {
 	margin: 50px 0;
 	display: block;
 }
 .nav-social li {
 	display: inline-block;
+	margin-right: 20px;
+}
+.nav-social li:last-child {
+	margin-right: 0;
 }
 .nav-social li a {
 	width: 36px;
@@ -484,7 +501,6 @@ strong {}
 	background-color: #C0C0C0;
 	display: block;
 	border-radius: 50%;
-	margin-right: 20px;
 	color: #475A85;
 	padding: 10px;
 }
@@ -543,6 +559,10 @@ textarea {
 @media (max-width: 768px) {
 	.slider-kalau .img-slider { margin: 50px 0 40px; }
 	.slider-kalau .text-block { margin-bottom: 50px; }
+
+	.block-circle { margin-bottom: 50px; }
+
+	.contact-container .feedback-block { margin-bottom: 50px; }
 }
 
 @media (min-width: 768px) {
@@ -567,11 +587,13 @@ textarea {
 	.slogan h2 { font-size: 36px; }
 	.slogan p { font-size: 22px; }
 
-	#testimonials .container-flex { flex-direction: row; }
+	#testimonials .container-flex { flex-direction: row; align-items: center; justify-content: space-between;}
 	.block-circle { width: 30%; }
 	.text-reviews { width: 65%; }
 
-	.item-contact { text-align: left; }
+	#contact .container-flex { flex-direction: row;  }
+	.contact-container { margin-bottom: 80px; }
+	.item-contact { text-align: left; width: 50%;}
 	.nav-social { margin: 50px 0 0 0; }
 	input { width: 48%; }
 	#feedback_name { float: left; }
@@ -604,8 +626,13 @@ textarea {
 
 	.item-portofolio { width: 31.5%; }
 
+	.circle { width: 276px; height: 276px; }
+
 	.slogan h2 { font-size: 48px; }
 	.slogan p { font-size: 24px; }
+
+	.item-contact p { margin-bottom: 22px; }
+	.item-contact p:nth-child(2) { margin-bottom: 37px; }
 
 	.item-md-3 { width: 25%; }
 	.item-md-4 { width: 33.33333333%; }

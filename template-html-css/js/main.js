@@ -1,6 +1,6 @@
 $(window).load(function() {
 
-	$("#up_button").on("click", function (e) {
+	$("#up_button, #footer_up").on("click", function (e) {
 		e.stopPropagation();
 		e.preventDefault();
 		$('html, body').animate({
