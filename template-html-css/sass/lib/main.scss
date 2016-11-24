@@ -1,0 +1,11 @@
+blockquote {
+  margin-bottom: 1em;
+  padding: .5em;
+  border: 1px dashed $border;
+  padding-left: .6em;
+  font-style: italic;
+}
+a {color: $light-blue; text-decoration: none;
+  &:hover {color: $blue; text-decoration: underline;}
+  &:visited {color: $violet;}
+}
