@@ -1,0 +1,56 @@
+#header {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	background: $black;
+	position: fixed;
+	right: 0;
+	left: 0;
+	min-height: 80px;
+	z-index: 99999;
+	.logo {
+		width: 183px;
+		height: 25px;
+		margin: 30px 0 25px;
+		background: url($image_dir + 'logotype.png') 0 0 no-repeat;
+		a {
+			width: 100%;
+			display: block;
+			height: 28px
+		}
+	}
+	.open-menu {
+		display: block;
+		position: absolute;
+		right: 15px;
+		top: 20px;
+	}
+	.fa_icon .fa {
+		cursor: pointer;
+		color: $white;
+		font-size: 40px;
+		opacity: 1;
+		&:hover, &:focus {
+			opacity: 0.5;
+		}
+	}
+	.nav {
+		display: none;
+		&.display {
+			display: block;
+		}
+		li {
+			display: block;
+			margin-bottom: 20px;
+			text-align: center;
+			a {
+				color: $white;
+				font-size: 24px;
+				line-height: 26px;
+				&:hover, &:active {
+					color: $red;
+				}
+			}
+		}
+	}
+}

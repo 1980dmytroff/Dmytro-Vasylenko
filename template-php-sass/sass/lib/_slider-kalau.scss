@@ -1,0 +1,44 @@
+.slider-kalau {
+	background: $dark-blue;
+	width: 100%;
+	.container-flex {
+		display: flex;
+		flex-direction: column-reverse;
+		height: auto;
+		justify-content: center;
+		.text-block {
+			position: relative;
+			z-index: 2;
+			text-align: center;
+			 h2 {
+				color: $white;
+				margin-bottom: 26px;
+				position: relative;
+				z-index: 2;
+			}
+			 p {
+				font-size: 24px;
+				color: $white;
+				margin-bottom: 45px;
+			}
+		}
+		.img-slider {
+			display: block;
+			position: relative;
+			z-index: 2;
+			text-align: center;
+			.img-slider img {
+				margin: 0 auto;
+			}
+		}
+	}
+	.image-holder-bg {
+		position: absolute;
+		bottom: 0;
+		z-index: 1;
+		left: 24px;
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}	
+}

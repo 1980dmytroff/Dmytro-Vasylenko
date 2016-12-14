@@ -1,0 +1,35 @@
+.services-block {
+	background: $blue;
+	width: 100%;
+	.title-block {
+		color: $white;
+	}
+	.container-flex {
+		display: flex;
+		flex-direction: column;
+		.item-services {
+			margin-bottom: 50px;
+			text-align: center;
+			color: $white;
+			width: 100%;
+			.img-block {
+				display: inline-block;
+				height: 60px;
+			}
+			h5 {
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 14px;
+				margin-bottom: 30px;
+			}
+			.button-more {
+				width: 88px;
+				height: 33px;
+				font-size: 11px;
+				line-height: 33px;
+			}
+		}
+	}
+	
+}

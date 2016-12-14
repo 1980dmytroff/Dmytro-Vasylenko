@@ -1,0 +1,17 @@
+.slogan {
+	background-color: #7B7B7B;
+	background: url(../images/mask-parallax.png) 0 0 repeat;
+	height: 222px;
+	color: #fff;
+	text-align: center;
+	padding: 0 15px;
+	.container-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: inherit;
+		h2 {
+			font-size: 28px;
+		}
+	}
+}

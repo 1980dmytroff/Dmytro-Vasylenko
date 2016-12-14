@@ -1,0 +1,88 @@
+
+
+
+
+@media (max-width: 768px) {
+	.slider-kalau .img-slider { margin: 50px 0 40px; }
+	.slider-kalau .text-block { margin-bottom: 50px; }
+
+	.block-circle { margin-bottom: 50px; }
+
+	.contact-container .feedback-block { margin-bottom: 50px; }
+}
+
+@media (min-width: 768px) {
+	.layout { width:768px; }
+	.open-menu { display: none; }
+	#header .logo { float: left; }
+	#header .nav { display: block; float: right; }
+	#header .nav li { display: inline-block; margin: 0 0 0 30px; }
+	#header .nav li a { font-size: 14px; line-height: 80px; }
+
+	.slider-kalau  .container-flex { height: 385px; 	flex-direction: row; justify-content: space-between; align-items: center;}
+	.slider-kalau .text-block  { width: 50%; text-align: left; }
+	.slider-kalau .img-slider { width: 50%; margin-right: -23px; }
+	.slider-kalau .image-holder-bg { width: 73%; }
+ 
+	.services-block .container-flex, .portofolio-block .container-flex { flex-direction: row; justify-content: space-between; flex-wrap: wrap;}
+	.item-services { width: 50%; padding: 0 15px; }
+
+	.item-portofolio { width: 48%; }
+
+	.slogan { height: 322px; padding: 0; }
+	.slogan h2 { font-size: 36px; }
+	.slogan p { font-size: 22px; }
+
+	#testimonials .container-flex { flex-direction: row; align-items: center; justify-content: space-between;}
+	.block-circle { width: 30%; }
+	.text-reviews { width: 65%; }
+
+	#contact .container-flex { flex-direction: row;  }
+	.contact-container { margin-bottom: 80px; }
+	.item-contact { text-align: left; width: 50%;}
+	.nav-social { margin: 50px 0 0 0; }
+	input { width: 48%; }
+	#feedback_name { float: left; }
+	#feedback_email { float: right; }
+
+}
+@media (min-width: 768px) and (max-width: 1199px){
+	input, textarea { font-size: 16px; }
+}
+
+@media (min-width: 992px) {
+	.layout { width:992px; }
+	#header .nav li { margin: 0 0 0 50px; }
+
+	.slider-kalau .img-slider { width: 40%; }
+	.slider-kalau .text-block  { width: 60%; }
+	.slider-kalau h2 { font-size: 28px; margin-bottom: 46px;}
+	.slider-kalau p { font-size: 20px; margin-bottom: 70px;}
+
+	.title-block { margin-top: 72px; margin-bottom: 74px; }
+	.item-services { width: 25%; }
+
+	.item-portofolio { width: 31.5%; }
+
+	.circle { width: 276px; height: 276px; }
+
+	.slogan h2 { font-size: 48px; }
+	.slogan p { font-size: 24px; }
+
+	.item-contact p { margin-bottom: 22px; }
+	.item-contact p:nth-child(2) { margin-bottom: 37px; }
+
+}
+
+@media (min-width: 1200px) {
+	.layout { width:1200px; }
+
+	.slider-kalau  .container-flex { height: 485px; }
+	.slider-kalau .text-block  { width: auto; }
+	.slider-kalau .img-slider { height: 369px; width: 512px; }
+	.slider-kalau h2 { font-size: 36px; }
+	.slider-kalau p { font-size: 24px; }
+	.slider-kalau .image-holder-bg { width: 910px; }
+
+	.slogan { height: 422px; }
+}

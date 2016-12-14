@@ -1,0 +1,61 @@
+#testimonials {
+	.title-block:after { background: url($image_dir + 'separator.png')0 0 no-repeat; }
+	.bx-wrapper {
+		margin-bottom: 180px;
+		.bx-viewport {
+			height: auto!important;
+			background-color: $gray;
+			border: none;
+			box-shadow: none;
+			left: 0;
+			.container-flex {
+				display: flex;
+				flex-direction: column;
+				.block-circle {
+					width: 100%;
+					.circle {
+						background-color: $gray-tab;
+						width: 210px;
+						height: 210px;
+						border: 4px solid $gray-border;
+						border-radius: 50%;
+						margin:  0 auto;
+					}
+				}
+				.text-reviews {
+					width: 100%;
+					i {
+						float: left;
+						margin-top: 2px;
+					}
+					.text-reviews p {
+						font-style: italic;
+						margin-left: 22px;
+						line-height: 1.7;
+					}
+					.customer {
+						font-size: 24px;
+						font-weight: bold;
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+		.bx-controls {
+			.bx-pager.bx-default-pager {
+				bottom: -80px;
+				a {
+					width: 23px;
+					height: 23px;
+					border-radius: 50%;
+				}
+			}
+			.bx-controls-direction {
+				display: none;
+			}
+		}
+		
+	}
+	
+
+}
